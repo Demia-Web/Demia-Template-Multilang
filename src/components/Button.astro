@@ -1,0 +1,10 @@
+---
+const { title, color, link, id } = Astro.props;
+---
+
+<a {...link ? { href: link } : {}} class={`btn-gen ${color}`} id={id}>
+  <p class="title flex flex-col">
+    <span class="static">{title}</span>
+    <span class="hover">{title}</span>
+  </p>
+</a>

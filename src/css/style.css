@@ -1,0 +1,43 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  /* Colori */
+  --color-azzurro: #3dbcc8;
+
+  /* Misure */
+  --spacing-4: clamp(4px, 0.278vw, 0.391vh);
+  --spacing-8: clamp(8px, 0.556vw, 0.781vh);
+  --spacing-12: clamp(12px, 0.833vw, 1.172vh);
+  --spacing-16: clamp(16px, 1.111vw, 1.563vh);
+  --spacing-18: clamp(18px, 1.25vw, 1.758vh);
+  --spacing-24: clamp(24px, 1.667vw, 2.344vh);
+  --spacing-36: clamp(36px, 2.5vw, 3.516vh);
+  --spacing-44: clamp(44px, 3.056vw, 4.297vh);
+  --spacing-80: clamp(80px, 5.556vw, 7.813vh);
+  --spacing-100: clamp(100px, 6.944vw, 9.766vh);
+  --spacing-200: clamp(200px, 13.889vw, 19.531vh);
+}
+
+body,
+html {
+  font-family: "Lato", serif;
+  overflow-x: hidden;
+}
+
+/* Font */
+
+/* Spacing */
+
+.px-body {
+  padding-left: 2.5vw; /* 36px */
+  padding-right: 2.5vw; /* 36px */
+}
+
+.py-body {
+  padding-top: 13.889vw; /* 200px */
+  padding-bottom: 13.889vw; /* 200px */
+}

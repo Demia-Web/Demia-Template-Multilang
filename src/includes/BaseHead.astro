@@ -1,0 +1,29 @@
+---
+import "../css/style.css";
+const { title, description, keyword } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keyword} />
+<meta name="author" content="Demia S.r.l. | www.demia.org" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+
+<!-- Font -->
+<link rel="stylesheet" href="https://use.typekit.net/btf3xrv.css" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.svg" type="image/x-icon" />
