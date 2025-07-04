@@ -1,4 +1,5 @@
 ---
+import { HeadHrefLangs } from "astro-i18next/components";
 import "../css/style.css";
 const { title, description, keyword } = Astro.props;
 ---
@@ -18,6 +19,9 @@ const { title, description, keyword } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
+
+<!-- HeadHrefLangs -->
+<HeadHrefLangs />
 
 <!-- Font -->
 <link rel="stylesheet" href="https://use.typekit.net/btf3xrv.css" />

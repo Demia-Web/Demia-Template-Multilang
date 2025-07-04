@@ -3,13 +3,15 @@ import BaseHead from "../includes/BaseHead.astro";
 import Header from "../includes/Header.astro";
 import Footer from "../includes/Footer.astro";
 import Menu from "../includes/Menu.astro";
+import i18next from "i18next";
+const locale = i18next.language;
 import { ClientRouter } from "astro:transitions";
 
 const { title, description, keyword } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="it" id="html">
+<html lang={locale} id="html">
   <head>
     <BaseHead title={title} description={description} keyword={keyword} />
     <ClientRouter />
